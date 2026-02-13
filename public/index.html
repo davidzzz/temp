@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setup Success</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 40px; background: #f7f8fa; }
+      .card { max-width: 560px; background: white; border-radius: 12px; padding: 24px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+      .btn { border: 0; padding: 10px 14px; border-radius: 8px; cursor: pointer; }
+      .btn-primary { background: #2563eb; color: white; }
+      .btn-secondary { background: #e5e7eb; color: #111827; margin-left: 10px; }
+      #status { margin-top: 12px; color: #065f46; }
+      #linkBox { margin-top: 12px; word-break: break-all; font-size: 0.95rem; color: #1f2937; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Setup complete ✅</h1>
+      <p>Your checklist is ready. Invite a teammate to review or continue onboarding.</p>
+      <button id="shareBtn" class="btn btn-primary">Share setup checklist</button>
+      <button id="copyBtn" class="btn btn-secondary" disabled>Copy link</button>
+      <div id="status"></div>
+      <div id="linkBox"></div>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
