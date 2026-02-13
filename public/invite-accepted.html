@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invite accepted</title>
+  </head>
+  <body style="font-family: Arial, sans-serif; margin: 40px;">
+    <h1>Invite accepted 🎉</h1>
+    <p id="msg"></p>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const checklistId = params.get('checklistId');
+      document.getElementById('msg').textContent = checklistId
+        ? `You now have access to checklist ${checklistId}.`
+        : 'You now have access to the shared checklist.';
+    </script>
+  </body>
+</html>
